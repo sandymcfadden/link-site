@@ -1,19 +1,22 @@
-on: [push]
+on:
+  push:
+    branches:    
+      - main
 
+name: Publish Site
 jobs:
-    deploy_job:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
-    name: deploy
     steps:
-        - name: Checkout
-        uses: actions/checkout@v2
-        - name: Deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: ${{ secrets.FTP_USERNAME }}
-            server: ${{ secrets.FTP_SERVER }}
-            port: ${{ secrets.FTP_PORT }}
-            local_path: './static/*'
-            remote_path: '/var/www/app'
-            sftp_only: true
-            password: ${{ secrets.FTP_PASSWORD }}
+    - uses: actions/checkout@master
+    - name: Deploy file
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      with:
+        username: ${{ secrets.FTP_USERNAME }}
+        server: ${{ secrets.FTP_SERVER }}
+        port: ${{ secrets.FTP_PORT }}
+        local_path: './static/*'
+        remote_path: '/var/www/app'
+        sftp_only: true
+        password: ${{ secrets.FTP_PASSWORD }}
