@@ -1,0 +1,110 @@
+body {
+  background-color: #36454F;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+  border-radius: 50%;
+}
+
+ul, li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: auto;
+  max-width: 100px;
+  filter: drop-shadow(2px 2px 5px #000);
+}
+
+.profile-name {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.profile-about {
+  text-align: center;
+  padding: 2px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  border: 0.5px solid rgb(255, 255, 255);
+  border-width: 1px;
+  width: 490px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.links-in {
+  padding: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 0);
+  border-width: 1px;
+  width: 30px;
+  display: block;
+  border-radius: 20px;
+  left: 20px;
+  top: 18px;
+  position: absolute;
+  font-size: 20px;
+}
+
+.hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 1s;
+}
+
+.hover:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+@media (max-width: 548px) {
+  .links {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-width: 1px;
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    position: relative;
+  }
+  .profile-about {
+    text-align: center;
+    padding: 2px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
