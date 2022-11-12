@@ -19,4 +19,4 @@ jobs:
         local_path: './*'
         remote_path: '/var/www/sandym.ca/html'
         sftp_only: true
-        password: ${{ secrets.FTP_PASSWORD }}
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
