@@ -5,20 +5,6 @@ body {
 
 img {
   border-radius: 50%;
-}
-
-ul, li {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-h3 {
-  color: #fff;
-  text-align: center;
-}
-
-.profile-picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +14,13 @@ h3 {
   filter: drop-shadow(2px 2px 5px #000);
 }
 
-.profile-name {
+ul, li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+h1 {
   text-align: center;
   padding: 10px;
   color: white;
@@ -36,7 +28,7 @@ h3 {
   letter-spacing: 2px;
 }
 
-.profile-about {
+h2 {
   text-align: center;
   padding: 2px;
   color: white;
@@ -44,7 +36,12 @@ h3 {
   letter-spacing: 2px;
 }
 
-.links {
+h3 {
+  color: #fff;
+  text-align: center;
+}
+
+li a {
   text-align: center;
   margin-top: 20px;
   padding: 20px;
@@ -58,9 +55,12 @@ h3 {
   position: relative;
   font-size: 20px;
   letter-spacing: 3px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color .5s;
 }
 
-.links-in {
+li a i {
   padding: 5px;
   border: 0.5px solid rgba(255, 255, 255, 0);
   border-width: 1px;
@@ -73,13 +73,7 @@ h3 {
   font-size: 20px;
 }
 
-.hover {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  transition: color 1s;
-}
-
-.hover:hover {
+li a:hover {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
   text-decoration: none;
@@ -87,24 +81,7 @@ h3 {
 
 
 @media (max-width: 548px) {
-  .links {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    border: 0.5px solid rgb(255, 255, 255);
-    border-width: 1px;
+  li a {
     width: 290px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    position: relative;
-  }
-  .profile-about {
-    text-align: center;
-    padding: 2px;
-    color: white;
-    font-size: 15px;
-    letter-spacing: 1px;
   }
 }
