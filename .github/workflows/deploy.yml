@@ -17,6 +17,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         port: ${{ secrets.FTP_PORT }}
         local_path: './*'
-        remote_path: '/var/www/sandym.ca/html'
+        remote_path: '/html'
         sftp_only: true
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
