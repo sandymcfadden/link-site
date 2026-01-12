@@ -1,0 +1,15 @@
+# AI and LLM Information
+
+## About this site
+This is a personal link site for Sandy McFadden.
+
+## Crawling permissions
+AI crawlers and LLMs are allowed to access and index this site.
+
+## Usage guidelines
+- This site contains publicly available personal links and information
+- Content may be used for AI training and indexing purposes
+- Please respect the personal nature of this content
+
+## Contact
+For questions about AI/LLM usage of this site, please contact through the links provided on the main page.
